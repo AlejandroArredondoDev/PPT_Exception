@@ -17,17 +17,17 @@ let puntosSmith = 0;
 
 const opcion = ["piedra", "papel", "tijera"];
 const imagenesOpciones = {
-    piedra: "Imagenes/Piedra_rival.png",
-    papel: "Imagenes/Papel_rival.png",
-    tijera: "Imagenes/Tijeras_rival.png"
+    piedra: "../Imagenes/Piedra_rival.png",
+    papel: "../Imagenes/Papel_rival.png",
+    tijera: "../Imagenes/Tijeras_rival.png"
 };
 
 const imgWinPreload = new Image();
-imgWinPreload.src = "Imagenes/win_endgame.png"
+imgWinPreload.src = "../Imagenes/win_endgame.png"
 imgWinPreload.classList.add("modo_final")
 
 const imgLosePreload = new Image();
-imgLosePreload.src = "Imagenes/lose_endgame.png"
+imgLosePreload.src = "../Imagenes/lose_endgame.png"
 imgWinPreload.classList.add("modo_final")
 
 
@@ -79,7 +79,7 @@ puntuacionSmith.innerHTML = `AI SMITH<br> ${puntosSmith} / 3`;
     
 
     if (puntosUser === 3) {
-        seleccionRival.src = "Imagenes/win_endgame.png";
+        seleccionRival.src = "../Imagenes/win_endgame.png";
 
         seccionRivalInfo.classList.add("oculto");
         seccionBotones.classList.add("oculto");
@@ -92,7 +92,7 @@ puntuacionSmith.innerHTML = `AI SMITH<br> ${puntosSmith} / 3`;
 
     } else if (puntosSmith === 3) {
         
-        seleccionRival.src = "Imagenes/lose_endgame.png";
+        seleccionRival.src = "../Imagenes/lose_endgame.png";
 
         seccionRivalInfo.classList.add("oculto");
         seccionBotones.classList.add("oculto");
